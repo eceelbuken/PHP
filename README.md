@@ -1,10 +1,10 @@
 # PHP
  ##
-                                                                 PHP RAPORU
+#                                                                PHP RAPORU
                                                                  
-  PHP NEDİR?
+   ##                                                             PHP NEDİR?
   PHP; dinamik web siteleri, web uygulamaları geliştirmek için oluşturulan web tabanlı olarak çalışan bir programlama dilidir. PHP site ve PHP programlar için kullanılabilir.
-  DEĞİŞKENLER
+  ##DEĞİŞKENLER
   Php’de bir değişken $ işareti ile başlar.
   Değişkenler rakam ile başlayamazlar.
   _ dışında özelm karakter kullanılamaz mesela + - * ? ! vs. şeklinde
@@ -15,7 +15,7 @@
   Eğer *echo '$ad $yas'; yazılırsabu sefer ekrana değişkenin değeri değil doğrudan değişken yazılır mesela bu örnek için ekran çıktımız $ad $yas olacaktır.
   Değişkenler ile dizi de tanımlanabilir mesela $dizi = array("ece","ramazan"); şeklinde yazılarak dizi tanımlanabilir ve ekrana bastırılmak istendiğinde ise echo $dizi[0] diyerek index değeri verilir ve index değerindeki eleman ekrana bastırılmış olur.
   boolean şeklinde kullanmak istersek eğer o zaman da şöyle yazıyoruz $kontrol = true; eğer bunu yazarsak ekrana 1 basar $kontrol= false; yazılırsa da ekranda bir şey gözükmez yani boşluk basmış olur.
-  PHP'de Veri Türleri
+  ##                                                           PHP'de Veri Türleri
 PHP'de 4 farklı temel veri türü vardır:   
 boolean : TRUE (Doğru) ya da FALSE (Yanlış) değeri alan bir veri türüdür.     
 integer : Bir tamsayı değer içeren bir veri türüdür.     
@@ -24,7 +24,7 @@ string : Karakter dizileri tanımlamaya yarayan bir veri türüdür.
 PHP''de 2 bileşik veri türü vardır:      
 Dizi (Array) : Farklı veri türlerini tek bir değişken adı ile tanımlayan bir veri kümesidir.     
 Nesne (Object) : Farklı veri türlerine ve fonksiyonlardan oluşan bir veri topluluğuna tek bir isim ile erişim sağlayan bir veri türüdür.
-PHP DİZİLERLE ÇALIŞMA
+##                                                          PHP DİZİLERLE ÇALIŞMA
 <?php
 
 $hafta = array("pazartesi","Salı","Çarşamba","Perşembe",
@@ -35,7 +35,7 @@ echo $hafta[3]; // ekrana perşembe yazar
 
 ?>
 burada dizi oluşturmaya ve ekrana bastırmaya bir örnek vererek konu özetini geçiyorum.
-PHP RAKAMLARLA ÇALIŞMA
+##                                                         PHP RAKAMLARLA ÇALIŞMA
 echo 5 - 9;
 echo 8 + 7;
 echo 5.7 * 9;
@@ -47,7 +47,7 @@ $sayi1 = 10;
 $sayi2 =20;
 echo $sayi1 + $sayi2; // + - * gibi oynama yapılabilir bu şekilde
 bunu yazarsak ekrana sonuç olarak 30 bastırılır.
-GET VE POST KARŞILAŞTIRMASI
+##                                                      GET VE POST KARŞILAŞTIRMASI
 Get ve post kullanıcıdan alınan bilgileri iletmek için kullanılan methodlardır. Aradaki fark şu;
 Get'te verileri açık olarak gönderilirken postta verileri tamamen kapalı şekilde gönderiyoruz. Gette gönderdiğimiz veriler gözükebilirken postta gönderdiğimiz veriler gözükmez.Arka tarafta gizli olarak iletilir.Sayfalarda get methodunun kullanımı güvenlik açısından tehlikelidir.Özellikle SQL injection yapıları, SQL sorgularına yapılan müdahaleler bu yapılar üzerinden işleniyor.
 
@@ -56,7 +56,7 @@ Get'te verileri açık olarak gönderilirken postta verileri tamamen kapalı şe
 
 
 
-GET İÇİN ÖRNEK VERİRSEK;  (hazır örnek kullanımı daha iyi anlaşılması için koydum)
+##                             GET İÇİN ÖRNEK VERİRSEK;  (hazır örnek kullanımı daha iyi anlaşılması için koydum)
 Anasayfa, Hakkımızda ve haberler adında 3 adet sayfamız olsun. Bu 3 sayfa içinde farklı farklı php dosyası oluşturmak hem bizim işimizi zorlaştırır hemde hafıza maliyetimizi artırır. Biz tek bir sayfada kullanıcıya 3 sayfa gösterelim hem sayfa fazlalığından hemde hafıza maliyetinden kar etmeye çalışalım.
 
 Algoritmamız: Sayfalarımıza bizim belirlediğimiz indis numaraları verelim.
@@ -134,5 +134,6 @@ if($v == 1) {
 ?>
 
 
+![Ekran Görüntüsü (179)](https://user-images.githubusercontent.com/68509097/124517338-6915f880-ddec-11eb-967f-fca3a829e29f.png)
 
 
